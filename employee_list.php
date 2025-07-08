@@ -7,16 +7,13 @@ if (!isset($_SESSION['user_id'])) {
 
 include 'db_connect.php';
 
-// Get filters from request
 $name_filter = $_GET['name'] ?? '';
 $dept_filter = $_GET['department_id'] ?? '';
 $role_filter = $_GET['role_id'] ?? '';
 
-// Fetch department and role options
 $departments = $conn->query("SELECT id, name FROM departments");
 $roles = $conn->query("SELECT id, name FROM roles");
 
-// Base query
 $query = "
 SELECT e.id, e.name AS employee_name, e.email, e.phone,
        d.name AS department, r.name AS role,

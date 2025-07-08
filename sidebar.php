@@ -11,7 +11,6 @@ function isArrowVisible($page) {
 ?>
 
 <div class="bg-dark sidebar text-white vh-100 p-3 position-relative" style="min-width: 300px;" id="sidebar">
-  <!-- Close Button -->
   <button class="btn btn-sm btn-danger position-absolute top-0 end-0 m-2 d-md-none" onclick="document.getElementById('sidebar').style.display='none'">
     &times;
   </button>

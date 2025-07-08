@@ -25,10 +25,8 @@ if (!isset($_SESSION['user_id'])) {
 <body>
 
   <div class="d-flex">
-    <!-- Sidebar -->
     <?php require 'sidebar.php'; ?>
 
-    <!-- Main content -->
     <div class="flex-grow-1 p-4">
       <h2>Welcome, <?= htmlspecialchars($_SESSION['username']) ?> 👋</h2>
       <p>Select a section from the menu to manage your data.</p>

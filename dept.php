@@ -154,6 +154,5 @@ $result = $conn->query($query);
     </table>
   </div>
 </div>
-
 </body>
 </html>

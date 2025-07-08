@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt->fetch();
 
         if (password_verify($pass, $hashed_pass)) {
-            // Set session and redirect
             $_SESSION['user_id'] = $user_id;
             $_SESSION['username'] = $user;
             header("Location: index.php");
