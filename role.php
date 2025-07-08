@@ -99,8 +99,6 @@ unset($_SESSION['flash_success'], $_SESSION['flash_error']);
     <?php elseif ($error): ?>
       <div class="alert alert-danger"><?= $error ?></div>
     <?php endif; ?>
-
-    <!-- Form -->
     <div class="card mb-4">
       <div class="card-body">
         <form method="POST">
