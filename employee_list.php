@@ -123,7 +123,7 @@ $result = $conn->query($query);
               <td><?= htmlspecialchars($row['city']) ?></td>
               <td><?= htmlspecialchars($row['created_at']) ?></td>
               <td>
-                <a href="edit_employee.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-warning">
+                <a href="add_employee.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-warning">
                   <i class="bi bi-pencil"></i>
                 </a>
                 <a href="delete_employee.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this employee?');">
